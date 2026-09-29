@@ -1,10 +1,9 @@
 
 /* ============================================
    Design direction
-   Body font:     Georgia, serif
-   Heading font:  Helvetica, sans-serif
-   Text color:    #222222
-   Background:    #fdfdfb
+   Body font:     Gill Sans MT, Gill Sans, sans serif
+   Heading font:  Trebuchet MS, sans-serif
+   Background:    #c5d6e0
    Accent:        #1a5f9c
    Mood: quiet, editorial, plenty of white space
    ============================================ */
@@ -30,9 +29,10 @@ a:hover { color: #8a11fc; }
 
 /* --- Wrapper --- */
 .wrapper {
-  max-width: 500px;
+  width: 80%;
   margin: 0 auto;
   padding: 0 3rem;
+  max-width: 700px;
 }
 
 /* --- Header and nav --- */
@@ -41,13 +41,66 @@ a:hover { color: #8a11fc; }
 
 /* --- Hero --- */
 
-.hero-title { color: #9c0000;}
-.hero-text { color: #9c0000;}
+.hero {
+  position: relative;
+}
 
+.hero-image {
+  width: 100%;
+  height: 400px;
+  opacity: 0.8;
+  transition: opacity 0.9s ease-in-out;
+  object-fit: cover;
+  display: block;
+} 
+
+.hero-title {
+  position: absolute;
+  filter: drop-shadow(10px 5px 5px #000);
+  bottom: 20%;
+  left: 5%;
+}
+
+.hero-text {
+  position: absolute;
+  filter: drop-shadow(10px 5px 5px #000);
+  bottom: 12%;
+  left: 6%;
+} 
+
+.hero-title { color: #f3cf04;
+font-size: 3rem;}
+.hero-text { color: #f3cf04;
+font-size: 1.5rem;}
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
 
 /* --- Text blocks --- */
+.image-inline-left {
+  float: left;
+  width: 35%;
+  max-width: 100%;
+  margin-right: 1em;
+  border-radius: 20px;
+  border-width: 5px;
+  border-style: outset;
+}
 
+.image-inline-right {
+  float: right;
+  width: 50%;
+  max-width: 100%;
+  margin-left: 1em;
+}
 
+p {display:flow-root;} 
 /* --- Lists --- */
 
 
