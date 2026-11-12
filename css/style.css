@@ -325,6 +325,62 @@ padding: 0.5em 2em;}
 .hero-title { color: #f3cf04;
 font-size: 5rem;}
 
+}
 
+/*Form styles*/ 
+form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #ff9810;
+  padding: 20px;
+  border-radius: 8px;
+}
 
+label {
+  display: block;
+  margin-top: 10px;
+  color: #861616;
+}
+
+input {
+  width: 90%;
+  border-radius: 4px;
+  height: 30px;
+  font-size: 20px; 
+}
+
+input:user-invalid {
+  border: dashed 2px red;
+}
+
+textarea:user-invalid {
+  border: dashed 2px red;
+}
+
+textarea{border-radius: 4px;
+  font-size: 20px; 
+  height: 100px;
+  border-radius: 8px;
+}
+
+input.phone {
+  width: 50%; 
+}
+
+textarea {
+  width: 90%;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 30px;
+  background-color: #861616;
+  color: #f3cf04;
+}
+
+button:hover {
+  background-color: #f3cf04;
+  color: #861616;
 }
